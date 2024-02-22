@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hesam Farjad's Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .image-set {
+        border-radius: 15px;
+      }
+
+      .header-color {
+        background-color: #219c90;
+        /* border: 2px solid #217b72;
+        border-radius: 5px; */
+      }
+
+      .header-div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .button {
+        background-color: #e9b824;
+        /* #E9B824 */
+        /* #EE9322 */
+        /* #D83F31 */
+        /* #219C90 */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!---Header-->
+    <header class="header-color p-3">
+      <div class="container">
+        <div class="header-div">
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li><a href="#" class="nav-link px-2 text-light">Home</a></li>
+            <li>
+              <a
+                href="https://github.com/HesamFarjad?tab=repositories"
+                class="nav-link px-2 text-white"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/HesamFarjad"
+                class="nav-link px-2 text-white"
+                >About Me</a
+              >
+            </li>
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+          </form>
+
+          <div class="text-end">
+            <button type="button" class="btn btn-warning">Search</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Heroes-->
+
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="./public/MyProj.png"
+            class="d-block mx-lg-auto img-fluid image-set"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-4">
+            Welcome to My Portfolio
+          </h1>
+          <p class="lead">
+            Discover diverse projects featuring React.js, Redux, JavaScript,
+            CSS, HTML, and more. Explore the fusion of creativity and technology
+            on our platform.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Projects-->
+
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Top Projects</h2>
+      <!-- pic1-->
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+          >
+            <img src="./public/Pizza.png" />
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Pizza Quick: Order Your Favorites Online
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="./public/PizzaLogo.gif"
+                    alt="WorldWise icon"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  />
+                </li>
+
+                <li class="d-flex align-items-center">
+                  <small>1st</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- pic2-->
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+          >
+            <img src="./public/WorldWise.png" />
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                World Wise: Explore, Connect, Share
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="./public/icon.png"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  />
+                </li>
+
+                <li class="d-flex align-items-center">
+                  <!-- <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg> -->
+                  <small>2nd</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- pic3-->
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+          >
+            <img src="./public/Split-bill.png" />
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Split the Bill: Fair Share Dining
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="./public/splitBillLogo.gif"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  />
+                </li>
+
+                <li class="d-flex align-items-center">
+                  <small>3rd</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+          >
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >© 2024 Company, Inc</span
+          >
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a href="farjadhesam@gmail.com">
+              <img src="./public/GmailLogo.png" height="30" />
+            </a>
+          </li>
+
+          <li class="ms-3">
+            <a href="https://github.com/HesamFarjad">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                height="35"
+              />
+            </a>
+          </li>
+
+          <li class="ms-3">
+            <a href="...">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+                height="35"
+              />
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
