@@ -12,6 +12,12 @@
     />
 
     <style>
+      .gradient-background {
+        background: linear-gradient(300deg, #ee9322, #219c90, #e9b824);
+        background-size: 180% 180%;
+        animation: gradient-animation 18s ease infinite;
+      }
+
       .image-set {
         border-radius: 15px;
       }
@@ -79,16 +85,6 @@
               <button type="button" class="btn btn-warning">Search</button>
             </div>
           </form>
-
-          <!-- <form class="col-6 col-lg-auto mb-2 mb-lg-0 me-lg-3" role="search">
-            <input
-              type="search"
-              class="form-control"
-              placeholder="Search..."
-              aria-label="Search"
-            />
-            <button type="button" class="btn btn-warning">Search</button>
-          </form> -->
         </div>
       </div>
     </header>
@@ -128,7 +124,7 @@
       <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
         <div class="col">
           <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            class="gradient-background card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
           >
             <img src="./public/Pizza.png" />
             <div
@@ -158,7 +154,7 @@
         <!-- pic2-->
         <div class="col">
           <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            class="gradient-background card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
           >
             <img src="./public/WorldWise.png" />
             <div
@@ -179,9 +175,6 @@
                 </li>
 
                 <li class="d-flex align-items-center">
-                  <!-- <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#calendar3"></use>
-                  </svg> -->
                   <small>2nd</small>
                 </li>
               </ul>
@@ -191,7 +184,7 @@
         <!-- pic3-->
         <div class="col">
           <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            class="gradient-background card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
           >
             <img src="./public/Split-bill.png" />
             <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
