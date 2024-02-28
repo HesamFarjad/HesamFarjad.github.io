@@ -42,6 +42,38 @@
         /* #D83F31 */
         /* #219C90 */
       }
+
+      /* CSS for header icon */
+      .nav-link {
+        color: white; /* Adjust color as needed */
+        transition: transform 0.3s ease, color 0.3s ease; /* Add smooth transition */
+      }
+
+      /* Hover in effect */
+      .nav-link:hover {
+        transform: scale(1.1);
+        color: #e9b824; /* Change color on hover */
+      }
+
+      .footer-icon {
+        transition: transform 0.3s ease, filter 0.3s ease; /* Add smooth transition */
+      }
+
+      /* Hover in effect */
+      .footer-icon:hover {
+        transform: scale(1.1); /* Adjust scale factor for desired zoom effect */
+        filter: brightness(1.2); /* Adjust brightness for hover effect */
+      }
+
+      /* Remove underline from all links */
+      a {
+        text-decoration: none; /* Remove default underline */
+      }
+
+      /* Add hover effect for all links */
+      a:hover {
+        text-decoration: none; /* Remove underline on hover */
+      }
     </style>
   </head>
 
@@ -129,91 +161,99 @@
       <!-- pic1-->
       <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
         <div class="col">
-          <div
-            class="gradient-background card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-          >
-            <img src="./public/Pizza.png" />
+          <a href="https://github.com/HesamFarjad/Pizza-Order-Online">
             <div
-              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              class="gradient-background card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             >
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                Pizza Quick: Order Your Favorites Online
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="./public/PizzaLogo.gif"
-                    alt="WorldWise icon"
-                    width="32"
-                    height="32"
-                    class="rounded-circle border border-white"
-                  />
-                </li>
+              <img src="./public/Pizza.png" />
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  Pizza Quick: Order Your Favorites Online
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="./public/PizzaLogo.gif"
+                      alt="WorldWise icon"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white"
+                    />
+                  </li>
 
-                <li class="d-flex align-items-center">
-                  <small>1st</small>
-                </li>
-              </ul>
+                  <li class="d-flex align-items-center">
+                    <small>1st</small>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- pic2-->
         <div class="col">
-          <div
-            class="gradient-background card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-          >
-            <img src="./public/WorldWise.png" />
+          <a href="https://github.com/HesamFarjad/WorldWise">
             <div
-              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              class="gradient-background card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             >
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                World Wise: Explore, Connect, Share
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="./public/icon.png"
-                    alt="Bootstrap"
-                    width="32"
-                    height="32"
-                    class="rounded-circle border border-white"
-                  />
-                </li>
+              <img src="./public/WorldWise.png" />
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  World Wise: Explore, Connect, Share
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="./public/icon.png"
+                      alt="Bootstrap"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white"
+                    />
+                  </li>
 
-                <li class="d-flex align-items-center">
-                  <small>2nd</small>
-                </li>
-              </ul>
+                  <li class="d-flex align-items-center">
+                    <small>2nd</small>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- pic3-->
         <div class="col">
-          <div
-            class="gradient-background card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-          >
-            <img src="./public/Split-bill.png" />
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                Split the Bill: Fair Share Dining
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="./public/splitBillLogo.gif"
-                    alt="Bootstrap"
-                    width="32"
-                    height="32"
-                    class="rounded-circle border border-white"
-                  />
-                </li>
+          <a href="https://github.com/HesamFarjad/Split-bill">
+            <div
+              class="gradient-background card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            >
+              <img src="./public/Split-bill.png" />
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  Split the Bill: Fair Share Dining
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="./public/splitBillLogo.gif"
+                      alt="Bootstrap"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white"
+                    />
+                  </li>
 
-                <li class="d-flex align-items-center">
-                  <small>3rd</small>
-                </li>
-              </ul>
+                  <li class="d-flex align-items-center">
+                    <small>3rd</small>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -222,7 +262,7 @@
     <div class="header-color">
       <div class="container">
         <footer
-          class="d-flex flex-wrap justify-content-center align-items-center py-4 mt-4 border-top"
+          class="d-flex flex-wrap justify-content-center align-items-center py-4 mt-4 border-top footer-icon"
         >
           <div class="col-md-0 d-flex align-items-center">
             <a
