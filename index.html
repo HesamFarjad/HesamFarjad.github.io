@@ -13,6 +13,31 @@
     />
 
     <style>
+      /* Start NEW CSS*/
+      #particles-js {
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      #content-container {
+        position: relative;
+        z-index: 2; /* Ensure content appears above particles */
+      }
+
+      /* Adjust individual content sections as needed */
+      #home,
+      #about,
+      #project,
+      #contact {
+        position: relative; /* Ensure content sections are positioned relative to the container */
+        padding: 50px; /* Add padding or adjust styling as needed */
+      }
+      /* END NEW CSS*/
+
       .gradient-background {
         background: linear-gradient(300deg, #ee9322, #219c90, #e9b824);
         background-size: 180% 180%;
@@ -41,9 +66,32 @@
         align-items: center;
         justify-content: center;
       }
+      body {
+        background-color: #b7dfda;
+      }
+
+      h1 {
+        color: #040337;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      h2 {
+        color: #040337;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        border-bottom: #9c213a;
+      }
+
+      p {
+        color: #040337;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
 
       .button {
-        background-color: #e9b824;
+        /* background-color: #e9b824; */
+        color: #040337;
         /* #E9B824 */
         /* #EE9322 */
         /* #D83F31 */
@@ -83,9 +131,13 @@
       }
     </style>
   </head>
-
   <body>
+    <!---START particles background-->
+    <div id="particles-js"></div>
+    <!---END particles background-->
+
     <!---Header-->
+
     <header class="header-color p-2">
       <div class="container">
         <div class="header-div">
@@ -127,7 +179,9 @@
               />
             </div>
             <div class="col-auto">
-              <button type="button" class="btn btn-warning">Search</button>
+              <button type="button" class="btn btn-warning button">
+                Search
+              </button>
             </div>
           </form>
         </div>
@@ -149,13 +203,11 @@
           />
         </div>
         <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-4">
-            Welcome to My Portfolio
-          </h1>
+          <h1>Welcome to My Portfolio</h1>
           <p class="lead">
             Discover diverse projects featuring React.js, Redux, JavaScript,
             CSS, HTML, and more. Explore the fusion of creativity and technology
-            on our platform.
+            on my platform.
           </p>
         </div>
       </div>
@@ -164,7 +216,7 @@
     <!--Projects-->
 
     <div class="container px-4 py-5" id="custom-cards">
-      <h2 class="pb-2 border-bottom">Top Projects</h2>
+      <h2 class="pb-2 border-bottom border-white">Top Projects</h2>
       <!-- pic1-->
       <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
         <div class="col">
@@ -268,7 +320,7 @@
     <!--Fun Projects-->
 
     <div class="container px-4 py-5" id="custom-cards">
-      <h2 class="pb-2 border-bottom">Top Fun Projects</h2>
+      <h2 class="pb-2 border-bottom border-white">Top Fun Projects</h2>
       <!-- First / Drum Kit-->
       <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
         <div class="col">
@@ -416,7 +468,124 @@
         </footer>
       </div>
     </div>
+    <!-- START new script for probable aanimating background-->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- END new script for probable aanimating background-->
+    <!-- START another new script for probable aanimating background-->
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 80,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: "#ffffff",
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#000000",
+            },
+            polygon: {
+              nb_sides: 5,
+            },
+            image: {
+              src: "img/github.svg",
+              width: 100,
+              height: 100,
+            },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false,
+            },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 40,
+              size_min: 0.1,
+              sync: false,
+            },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: false,
+              mode: "repulse",
+            },
+            onclick: {
+              enable: true,
+              mode: "push",
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 400,
+              line_linked: {
+                opacity: 1,
+              },
+            },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
 
+    <!-- END another new script for probable aanimating background-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
