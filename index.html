@@ -43,60 +43,44 @@
         background-size: 180% 180%;
         animation: gradient-animation 18s ease infinite;
       }
-
       .gradient-background2 {
         background: linear-gradient(300deg, #e9b824, #d83f31, #219c90);
         background-size: 180% 180%;
         animation: gradient-animation 18s ease infinite;
       }
-
       .image-set {
         border-radius: 15px;
       }
-
       .header-color {
         background-color: #219c90;
-        /* border: 2px solid #217b72;
-        border-radius: 5px; */
       }
-
       .header-div {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
       }
+
+      .faza {
+        display: flex;
+        justify-content: space-between;
+      }
       body {
         background-color: #b7dfda;
       }
-
-      h1 {
-        color: #040337;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-      }
-
-      h2 {
-        color: #040337;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-      }
-
+      h1,
+      h2,
       p {
         color: #040337;
         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
           sans-serif;
       }
+
       a {
         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
           sans-serif;
+        text-decoration: none; /* Remove default underline */
       }
-
-      input {
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-      }
-
       .button {
         color: #040337;
         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -129,11 +113,6 @@
         filter: brightness(1.2); /* Adjust brightness for hover effect */
       }
 
-      /* Remove underline from all links */
-      a {
-        text-decoration: none; /* Remove default underline */
-      }
-
       /* Add hover effect for all links */
       a:hover {
         text-decoration: none; /* Remove underline on hover */
@@ -146,59 +125,25 @@
     <!---END particles background-->
 
     <!---Header-->
-
     <header class="header-color p-2">
       <div class="container">
-        <div class="header-div">
-          <ul
-            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center align-items-center mb-md-0"
-          >
+        <div class="header-div faza">
+          <div>
             <img src="./public/HF-logo.png" height="120" />
-
-            <li>
-              <a
-                href="https://hesamfarjad.github.io/html-portfolio/"
-                class="nav-link px-2 text-light"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://github.com/HesamFarjad?tab=repositories"
-                class="nav-link px-2 text-white"
-                >Projects</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://github.com/HesamFarjad"
-                class="nav-link px-2 text-white"
-                >About Me</a
-              >
-            </li>
-          </ul>
-
-          <form class="row gx-2 align-items-center" role="search">
-            <div class="col-auto">
-              <input
-                type="search"
-                class="form-control"
-                placeholder="Search..."
-                aria-label="Search"
-              />
-            </div>
-            <div class="col-auto">
-              <button type="button" class="btn btn-warning button">
-                Search
-              </button>
-            </div>
-          </form>
+          </div>
+          <div>
+            <a href="https://github.com/HesamFarjad?tab=repositories">
+              <img src="./public/drawer.png" height="50" />
+            </a>
+            <a href="https://github.com/HesamFarjad"
+              ><img src="./public/aboutMe.png" height="50"
+            /></a>
+          </div>
         </div>
       </div>
     </header>
 
     <!-- Heroes-->
-
     <div class="container col-xxl-8 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
