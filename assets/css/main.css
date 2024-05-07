@@ -1082,6 +1082,7 @@ textarea {
 .image img {
   display: block;
   width: 100%;
+  border-radius: 30px;
 }
 
 .image.featured {
