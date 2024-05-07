@@ -735,7 +735,8 @@ table {
 /* Box */
 
 .box {
-  background: #ffffff;
+/*   background: #ffffff; */
+  background-color: #b0a695;
   color: #39454b;
   padding: 2em;
 }
@@ -758,6 +759,7 @@ table {
     padding: 1.5em 1.25em 1.5em 1.25em;
 /*     background-color: rgba(255, 255, 255, 0.9); */
 /*     background-color: #ebe3d5; */
+/*     background-color: #b0a695; */
     background-color: #b0a695;
   }
 }
