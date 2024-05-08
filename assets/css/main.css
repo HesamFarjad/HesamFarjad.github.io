@@ -1296,6 +1296,14 @@ ul.icons a {
 
 /* Sections/Article */
 
+.topicon {
+  transition: transform 0.3s ease;
+}
+
+.topicon:hover {
+  transform: scale(1.2); /* Increase size on hover */
+}
+
 header {
   margin-bottom: 1em;
 }
