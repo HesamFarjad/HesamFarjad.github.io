@@ -1301,7 +1301,8 @@ ul.icons a {
 }
 
 .topicon:hover {
-  transform: scale(1.2); /* Increase size on hover */
+  transform: scale(1.2);
+  font-weight: bolder;
 }
 
 header {
