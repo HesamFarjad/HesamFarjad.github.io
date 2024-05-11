@@ -1298,11 +1298,12 @@ ul.icons a {
 
 .topicon {
   transition: transform 0.3s ease;
+  font-weight: 700;
 }
 
 .topicon:hover {
   transform: scale(1.2);
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 header {
